@@ -26,10 +26,11 @@ def entradas():
     num1 = float(input('Digite o primeiro número: '))
     num2 = float(input('Digite o segundo número: '))
     return num1, num2
-while True:
+
+def menu_principal():
     print('                           Calculadora')
     print('')
-    print('                                 Menu')
+    print('                                Menu')
     print('------------------------------------------------------------------')
     print('|                                                                |')
     print('|                            1 -> Calc. Cientifica               |')
@@ -38,24 +39,45 @@ while True:
     print('|                            0 -> Sair                           |')
     print('------------------------------------------------------------------')
     print('')
+
+def menu_cient():
+    print('                           Calculadora Cíentifica')
+    print('')
+    print('                                Menu')
+    print('------------------------------------------------------------------')
+    print('|                                                                |')
+    print('|                            1 -> Soma                           |')
+    print('|                            2 -> Subtração                      |')
+    print('|                            3 -> Multiplicação                  |')
+    print('|                            4 -> Divisão                        |')
+    print('|                            5 -> Raiz quad.                     |')
+    print('|                            6 -> Potência                       |')
+    print('|                                                                |')
+    print('|                            0 -> Sair                           |')
+    print('------------------------------------------------------------------')
+    print('')
+
+def menu_padrao():
+    print('                           Calculadora Padrão')
+    print('')
+    print('                                Menu')
+    print('------------------------------------------------------------------')
+    print('|                                                                |')
+    print('|                            1 -> Soma                           |')
+    print('|                            2 -> Subtração                      |')
+    print('|                            3 -> Multiplicação                  |')
+    print('|                            4 -> Divisão                        |')
+    print('|                                                                |')
+    print('|                            0 -> Sair                           |')
+    print('------------------------------------------------------------------')
+    print('')
+    
+while True:
+    menu_principal()
     opcao = int(input('Operação: '))
     if opcao == 1:
         while True:
-            print('                           Calculadora')
-            print('')
-            print('                                 Menu')
-            print('------------------------------------------------------------------')
-            print('|                                                                |')
-            print('|                            1 -> Soma                           |')
-            print('|                            2 -> Subtração                      |')
-            print('|                            3 -> Multiplicação                  |')
-            print('|                            4 -> Divisão                        |')
-            print('|                            5 -> Raiz quad.                     |')
-            print('|                            6 -> Potência                       |')
-            print('|                                                                |')
-            print('|                            0 -> Sair                           |')
-            print('------------------------------------------------------------------')
-            print('')
+            menu_cient()
             opcao = int(input('Operação: '))
             if opcao == 1:
                 num1, num2 = entradas()
@@ -93,19 +115,7 @@ while True:
                 print('Opção inválida! Tente novamente.')
     elif opcao ==2:
             while True:
-                print('                           Calculadora')
-                print('')
-                print('                                 Menu')
-                print('------------------------------------------------------------------')
-                print('|                                                                |')
-                print('|                            1 -> Soma                           |')
-                print('|                            2 -> Subtração                      |')
-                print('|                            3 -> Multiplicação                  |')
-                print('|                            4 -> Divisão                        |')
-                print('|                                                                |')
-                print('|                            0 -> Sair                           |')
-                print('------------------------------------------------------------------')
-                print('')
+                menu_padrao()
                 opcao = int(input('Operação: '))
                 if opcao == 1:
                     num1, num2 = entradas()
