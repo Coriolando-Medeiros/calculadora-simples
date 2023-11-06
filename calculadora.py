@@ -28,12 +28,13 @@ def entradas():
     return num1, num2
 
 def menu_principal():
+    print('')
     print('                           Calculadora')
     print('')
     print('                                Menu')
     print('------------------------------------------------------------------')
     print('|                                                                |')
-    print('|                            1 -> Calc. Cientifica               |')
+    print('|                            1 -> Calc. Científica               |')
     print('|                            2 -> Calc. Padrão                   |')
     print('|                                                                |')
     print('|                            0 -> Sair                           |')
@@ -41,7 +42,8 @@ def menu_principal():
     print('')
 
 def menu_cient():
-    print('                           Calculadora Cíentifica')
+    print('')
+    print('                           Calculadora Científica')
     print('')
     print('                                Menu')
     print('------------------------------------------------------------------')
@@ -58,6 +60,7 @@ def menu_cient():
     print('')
 
 def menu_padrao():
+    print('')
     print('                           Calculadora Padrão')
     print('')
     print('                                Menu')
