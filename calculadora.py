@@ -3,7 +3,7 @@ def potencia(num1, num2):
     return total
     
 def raiz(num1, num2):
-    total = num1 * (1/num2)
+    total = num1 ** (1/num2)
     return total
     
 def soma(num1, num2):
@@ -83,31 +83,40 @@ while True:
                 num1, num2 = entradas()
                 resultado = soma(num1, num2)
                 print(f'{num1} + {num2} = {resultado:.2f}')
+                input('Pressione ENTER para continuar...')
 
             elif opcao == 2:
                 num1, num2 = entradas()
                 resultado = subtracao(num1, num2)
                 print(f'{num1} - {num2} = {resultado}')
+                input('Pressione ENTER para continuar...')
 
             elif opcao == 3:
                 num1, num2 = entradas()
                 resultado = multiplicacao(num1, num2)
                 print(f'{num1} * {num2} = {resultado}')
+                input('Pressione ENTER para continuar...')
 
             elif opcao == 4:
                 num1, num2 = entradas()
                 resultado = divisao(num1, num2)
                 print(f'{num1} / {num2} = {resultado}')
+                input('Pressione ENTER para continuar...')
+                
             elif opcao == 5:
                 num1 = float(input('Digite o número: '))
                 num2 = float(input('Digite o expoente da raiz: '))
                 resultado = raiz(num1, num2)
                 print(f'{num1} √ {num2} = {resultado}')
+                input('Pressione ENTER para continuar...')
+                
             elif opcao == 6:
                 num1 = float(input('Digite a base: '))
                 num2 = float(input('Digite o expoente da potência: '))
                 resultado = potencia(num1, num2)
                 print(f'{num1} ^ {num2} = {resultado}')
+                input('Pressione ENTER para continuar...')
+                
             elif opcao == 0:
                 print('Voltando para menu principal')
                 break
@@ -121,26 +130,33 @@ while True:
                     num1, num2 = entradas()
                     resultado = soma(num1, num2)
                     print(f'{num1} + {num2} = {resultado:.2f}')
+                    input('Pressione ENTER para continuar...')
 
                 elif opcao == 2:
                     num1, num2 = entradas()
                     resultado = subtracao(num1, num2)
                     print(f'{num1} - {num2} = {resultado}')
+                    input('Pressione ENTER para continuar...')
 
                 elif opcao == 3:
                     num1, num2 = entradas()
                     resultado = multiplicacao(num1, num2)
                     print(f'{num1} * {num2} = {resultado}')
+                    input('Pressione ENTER para continuar...')
 
                 elif opcao == 4:
                     num1, num2 = entradas()
                     resultado = divisao(num1, num2)
                     print(f'{num1} / {num2} = {resultado}')
+                    input('Pressione ENTER para continuar...')
+                    
                 elif opcao == 5:
                     num1 = float(input('Digite o número: '))
                     num2 = float(input('Digite o expoente da raiz: '))
                     resultado = raiz(num1, num2)
                     print(f'{num1} √ {num2} = {resultado}')
+                    input('Pressione ENTER para continuar...')
+                    
                 elif opcao == 0:
                     print('Voltando para menu principal')
                     break
