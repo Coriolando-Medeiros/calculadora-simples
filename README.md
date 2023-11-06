@@ -10,6 +10,8 @@ Calculadora simples com saidas em terminal escrita em python. Essa aplicação c
 Nesse projeto trabalhei as logica de programação, funções, laços de repetição e alguns tratamentos de erros.
 Futuramente esse projeto ganhará interface grafica.
 
+Para executar a aplicação, basta baixar o arquivo e rodar o mesmo com dois cliques, sem necessidade de instalação.
+
 Segue as telas da aplicação:
 
 Menu Principal
@@ -23,3 +25,6 @@ Calculadora Científica
 Calculadora Padrão
 
 ![image](https://github.com/Coriolando-Medeiros/calculadora-simples/assets/107105546/21f8ae20-a595-47ca-b5fc-be76df9c802c)
+
+
+
