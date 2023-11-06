@@ -1,4 +1,4 @@
-# calculadora-simples
+# Calculadora Simples
 Calculadora simples com saidas em terminal escrita em python. Essa aplicação conta com três telas de menu, sendo:
 
 1 - Menu Principal com opção de escolha entre a calculadora científica e calculadora padrão.
