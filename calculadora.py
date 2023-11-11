@@ -19,8 +19,12 @@ def multiplicacao(num1, num2):
     return total
     
 def divisao(num1, num2):
-    total = num1/num2
-    return total
+        try:
+            total = num1/num2
+        except ZeroDivisionError:
+            print("Erro! Não é possível dividir por zero.")
+        total = 0
+        return total
 
 def entradas():
     num1 = float(input('Digite o primeiro número: '))
