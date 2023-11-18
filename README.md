@@ -27,4 +27,8 @@ Calculadora Padrão
 ![image](https://github.com/Coriolando-Medeiros/calculadora-simples/assets/107105546/21f8ae20-a595-47ca-b5fc-be76df9c802c)
 
 
+Na minha atualização foi feita uma interface gráfica usando a biblioteca Tkinter para a calculadora. Isso proporciona uma experiência mais amigável e visual para o usuário, com botões clicáveis e uma caixa de entrada visual.
+Também atualizei o código incluindo classes e funções
+
+![image](https://github.com/GleisonAmorim/calculadora-simples/assets/54336609/7b3f9782-ed73-4474-9d1b-d280eb7e503c)
 
