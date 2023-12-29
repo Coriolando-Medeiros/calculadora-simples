@@ -19,11 +19,10 @@ def multiplicacao(num1, num2):
     return total
     
 def divisao(num1, num2):
-        try:
-            total = num1/num2
-        except ZeroDivisionError:
-            print("Erro! Não é possível dividir por zero.")
-        total = 0
+    if num2 == 0:
+        print("Erro! Não é possível dividir por zero.")
+    else:
+        total = num1 / num2
         return total
 
 def entradas():
