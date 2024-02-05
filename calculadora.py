@@ -86,30 +86,35 @@ while True:
             menu_cient()
             opcao = input('Operação: ')
             if opcao == "1":
+                print('Soma')
                 num1, num2 = entradas()
                 resultado = soma(num1, num2)
                 print(f'{num1} + {num2} = {resultado:.2f}')
                 input('Pressione ENTER para continuar...')
 
             elif opcao == "2":
+                print('Subtração')
                 num1, num2 = entradas()
                 resultado = subtracao(num1, num2)
                 print(f'{num1} - {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
 
             elif opcao == "3":
+                print('Multiplicação')
                 num1, num2 = entradas()
                 resultado = multiplicacao(num1, num2)
                 print(f'{num1} * {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
 
             elif opcao == "4":
+                print('Divisão')
                 num1, num2 = entradas()
                 resultado = divisao(num1, num2)
                 print(f'{num1} / {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
                 
             elif opcao == "5":
+                print('Raiz quadrada')
                 num1 = float(input('Digite o número: '))
                 num2 = float(input('Digite o expoente da raiz: '))
                 resultado = raiz(num1, num2)
@@ -117,6 +122,7 @@ while True:
                 input('Pressione ENTER para continuar...')
                 
             elif opcao == "6":
+                print('Potência')
                 num1 = float(input('Digite a base: '))
                 num2 = float(input('Digite o expoente da potência: '))
                 resultado = potencia(num1, num2)
@@ -128,29 +134,33 @@ while True:
                 break
             else:
                 print('Opção inválida! Tente novamente.')
-    elif opcao =="2":
+    elif opcao =="1":
             while True:
                 menu_padrao()
                 opcao = input('Operação: ')
                 if opcao == "1":
+                    print('Soma')
                     num1, num2 = entradas()
                     resultado = soma(num1, num2)
                     print(f'{num1} + {num2} = {resultado:.2f}')
                     input('Pressione ENTER para continuar...')
 
                 elif opcao == "2":
+                    print('Subtração')
                     num1, num2 = entradas()
                     resultado = subtracao(num1, num2)
                     print(f'{num1} - {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
 
                 elif opcao == "3":
+                    print('Multiplicação')
                     num1, num2 = entradas()
                     resultado = multiplicacao(num1, num2)
                     print(f'{num1} * {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
 
                 elif opcao == "4":
+                    print('Divisão')
                     num1, num2 = entradas()
                     resultado = divisao(num1, num2)
                     print(f'{num1} / {num2} = {resultado}')
