@@ -37,8 +37,8 @@ def menu_principal():
     print('                                Menu')
     print('------------------------------------------------------------------')
     print('|                                                                |')
-    print('|                            1 -> Calc. Científica               |')
-    print('|                            2 -> Calc. Padrão                   |')
+    print('|                            1 -> Calc. Padrão                   |')
+    print('|                            2 -> Calc. Científica               |')
     print('|                                                                |')
     print('|                            0 -> Sair                           |')
     print('------------------------------------------------------------------')
@@ -80,97 +80,97 @@ def menu_padrao():
     
 while True:
     menu_principal()
-    opcao = int(input('Operação: '))
-    if opcao == 1:
+    opcao = input('Operação: ')
+    if opcao == "2":
         while True:
             menu_cient()
-            opcao = int(input('Operação: '))
-            if opcao == 1:
+            opcao = input('Operação: ')
+            if opcao == "1":
                 num1, num2 = entradas()
                 resultado = soma(num1, num2)
                 print(f'{num1} + {num2} = {resultado:.2f}')
                 input('Pressione ENTER para continuar...')
 
-            elif opcao == 2:
+            elif opcao == "2":
                 num1, num2 = entradas()
                 resultado = subtracao(num1, num2)
                 print(f'{num1} - {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
 
-            elif opcao == 3:
+            elif opcao == "3":
                 num1, num2 = entradas()
                 resultado = multiplicacao(num1, num2)
                 print(f'{num1} * {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
 
-            elif opcao == 4:
+            elif opcao == "4":
                 num1, num2 = entradas()
                 resultado = divisao(num1, num2)
                 print(f'{num1} / {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
                 
-            elif opcao == 5:
+            elif opcao == "5":
                 num1 = float(input('Digite o número: '))
                 num2 = float(input('Digite o expoente da raiz: '))
                 resultado = raiz(num1, num2)
                 print(f'{num1} √ {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
                 
-            elif opcao == 6:
+            elif opcao == "6":
                 num1 = float(input('Digite a base: '))
                 num2 = float(input('Digite o expoente da potência: '))
                 resultado = potencia(num1, num2)
                 print(f'{num1} ^ {num2} = {resultado}')
                 input('Pressione ENTER para continuar...')
                 
-            elif opcao == 0:
+            elif opcao == "0":
                 print('Voltando para menu principal')
                 break
             else:
                 print('Opção inválida! Tente novamente.')
-    elif opcao ==2:
+    elif opcao =="2":
             while True:
                 menu_padrao()
-                opcao = int(input('Operação: '))
-                if opcao == 1:
+                opcao = input('Operação: ')
+                if opcao == "1":
                     num1, num2 = entradas()
                     resultado = soma(num1, num2)
                     print(f'{num1} + {num2} = {resultado:.2f}')
                     input('Pressione ENTER para continuar...')
 
-                elif opcao == 2:
+                elif opcao == "2":
                     num1, num2 = entradas()
                     resultado = subtracao(num1, num2)
                     print(f'{num1} - {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
 
-                elif opcao == 3:
+                elif opcao == "3":
                     num1, num2 = entradas()
                     resultado = multiplicacao(num1, num2)
                     print(f'{num1} * {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
 
-                elif opcao == 4:
+                elif opcao == "4":
                     num1, num2 = entradas()
                     resultado = divisao(num1, num2)
                     print(f'{num1} / {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
                     
-                elif opcao == 5:
+                elif opcao == "5":
                     num1 = float(input('Digite o número: '))
                     num2 = float(input('Digite o expoente da raiz: '))
                     resultado = raiz(num1, num2)
                     print(f'{num1} √ {num2} = {resultado}')
                     input('Pressione ENTER para continuar...')
                     
-                elif opcao == 0:
+                elif opcao == "0":
                     print('Voltando para menu principal')
                     break
                 else:
                     print('Opção inválida! Tente novamente.')
-    elif opcao == 0:
+    elif opcao == "0":
         print('Obrigado por usar nossos sistemas!')
         print('Volte sempre!')
         break
     else:
-        print('Opção inválida! Tente novamente.')
+        print('Opção inválida! Tente novamente!')
